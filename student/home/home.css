@@ -1,0 +1,43 @@
+select {
+  padding: 10px;
+  margin: 2px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.welcome-banner {
+  display: flex;
+  justify-content: space-between;
+}
+.book-form {
+  margin: 10px;
+}
+.book-appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booked-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booked-details * {
+  margin: 10px;
+}
+.slot-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+}
+.slot-details h1 {
+  margin: 0;
+}
+.booked-details p {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,148 @@
+.hidden {
+  display: none;
+}
+.dashboard {
+  display: flex;
+}
+.dashboard-sidebar,
+.mobile_sidebar {
+  /* width: 30vw; */
+  height: 100vh;
+  padding: 0 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+.sidebar-list_container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img_container {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  border-bottom: 1px solid grey;
+}
+.profile-img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar-list_item {
+  margin: 50px 0;
+}
+.sidebar-list_item a {
+  text-decoration: none;
+  color: black;
+}
+.item-link {
+  display: flex;
+}
+.sidebar-list_item:last-child a {
+  color: red;
+}
+.sidebar-list_item:last-child a:hover {
+  font-weight: bold;
+}
+.sidebar-list_item a i {
+  padding-right: 10px;
+}
+.sidebar-list_item a:hover {
+  text-decoration: none;
+  /* color: rgba(0, 0, 0, 0.5); */
+}
+.dashboard-main {
+  /* width: 70vw; */
+  padding: 0;
+}
+.dashboard-main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.schedule-form .btn {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: end !important;
+}
+.schedule-form div:first-child {
+  display: flex;
+}
+.schedule-form div:nth-child(2) {
+  display: flex;
+}
+.schedule-input {
+  min-width: 200px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+.schedule-input input {
+  padding: 10px;
+  margin: 2px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.table-container {
+  overflow-x: scroll;
+}
+.bi-arrow-bar-right {
+  display: none;
+}
+.msg-container {
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 15px 15px 0 15px;
+}
+.msg-container > p {
+  font-weight: bold;
+}
+.msg-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.msg-footer p {
+  font-size: 0.7rem;
+}
+@media screen and (max-width: 600px) {
+  .dashboard-sidebar {
+    display: none;
+  }
+  .bi-arrow-bar-right {
+    display: block;
+  }
+  .schedule-form div:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .schedule-form div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-main_nav,
+  .schedule-form {
+    margin: 10px 0 20px 0;
+  }
+  .schedule-input {
+    margin: 10px 0;
+  }
+}

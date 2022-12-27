@@ -1,0 +1,14 @@
+{
+  "name": "bookie",
+  "version": "1.0.0",
+  "description": "A project appointment scheduling system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nwachukwu Francis",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.2"
+  }
+}

@@ -1,0 +1,114 @@
+.hidden {
+  display: none;
+}
+.dashboard {
+  display: flex;
+}
+.dashboard-sidebar,
+.mobile_sidebar {
+  /* width: 30vw; */
+  height: 100vh;
+  padding: 0 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+.sidebar-list_container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img_container {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  border-bottom: 1px solid grey;
+}
+.profile-img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar-list_item {
+  margin: 50px 0;
+}
+.sidebar-list_item a {
+  text-decoration: none;
+  color: black;
+}
+.item-link {
+  display: flex;
+}
+.sidebar-list_item a i {
+  padding-right: 10px;
+}
+.sidebar-list_item a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.bi-arrow-bar-right {
+  display: none;
+}
+.dashboard-main_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.header-img_container {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  padding: 15px;
+}
+.header-img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.appointment-container {
+  margin: 30px 10px;
+}
+.appointment-details {
+  display: flex;
+}
+.appointment-details h6 {
+  font-size: 2rem;
+  padding: 0 20px 20px 0;
+}
+.appointment-details p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.8rem;
+}
+
+.supervisor-msg {
+  margin-bottom: 10px;
+}
+.supervisor-msg_form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .dashboard-sidebar {
+    display: none;
+  }
+  .bi-arrow-bar-right {
+    display: block;
+  }
+  .appointment-details h6 {
+    font-size: 1.5rem;
+  }
+  .appointment-details p {
+    font-size: 1.2rem;
+  }
+  .appointment-details:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
